@@ -1,0 +1,178 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #7fffd4;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #1f1f1f;
+  text-align: center;
+  font-weight: bold;
+}
+.sosmed{
+  list-style-type: none;
+  display: inline;
+  margin: 10px 20px;
+  gap: 10px;
+  
+}
+
+.old {
+  border: 1px solid #7fffd4;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin: 10px 20px; 
+}
+
+.old:hover {
+  color: rgb(0, 247, 255);
+  transition: color 0.3s ease;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: #7fffd4 0px 0px 30px;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color:   aquamarine;
+  
+}
+th{
+  text-align: left;
+}
+nav a:hover {
+  font-weight: bold;
+  color: goldenrod;
+}
+.foto{
+  width: 100px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile header{
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 7px 7px 7px 7px #00ff0d33;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.judul {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #1f1f1f;
+  text-align: center;
+  
+}
+
+nav ul {
+  padding-inline: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #1f1f1f;
+
+  padding: 2px;
+  position: sticky;
+  top: 0;
+}
+
+main{
+  padding: 15px;
+  display: flex;
+  gap: 1,5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+aside{
+  flex: 1;
+  margin-left: 25px;
+}
+
+header{
+  display: inline;
+}
+
+aside article section .sosmed{
+  padding-inline: 15rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 35px;
+}
+
+aside article section .sosmed a{
+  color: aquamarine;
+  text-decoration: none;
+}
+
+aside article section .sosmed a:hover{
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+  main aside article .informasi {
+    margin-left: 45px;
+  }
+  main aside article .informasi h3{
+    margin-left: 50px;
+  }
+  
+}
